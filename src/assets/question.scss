@@ -1,0 +1,43 @@
+@import 'all.scss';
+
+nav {
+  @extend %nav;
+}
+  
+ul {
+  @extend %navUl;
+}
+  
+.link {
+  @extend %link;
+}
+    
+.link:hover {
+  @extend %linkHover;
+}
+
+h3 {
+  margin-bottom: $length2;
+}
+
+.contact {
+  color: $color3;
+}
+
+.questionInput {
+  caret-color: $color1;
+  background-color: transparent;
+  border: $color2 $length3 solid;
+}
+
+.submit {
+  width: $length2 * 10;
+  background-color: $color5;
+  color: $color4;
+  border: $color2 solid $length3;
+}
+
+.submit:hover {
+  background-color: $color4;
+  color: $color5;
+}

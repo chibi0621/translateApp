@@ -1,0 +1,37 @@
+@import '../assets/all.scss';
+
+nav {
+  @extend %nav;
+}
+  
+ul {
+  @extend %navUl;
+}
+  
+.link {
+  @extend %link;
+}
+    
+.link:hover {
+  @extend %linkHover;
+}
+
+.title {
+  color: $color3;
+  font-weight: bold;
+  margin: $length2 * 2 ;
+  margin-top: $length2 * 10;
+}
+
+.dashBtn {
+  padding: 0;
+  color: $color6;
+  border: $length3/2 solid pink;
+  width: $length2 * 4;
+}
+
+.dashBtn:hover {
+  color: $color4;
+  background-color: pink;
+  width: $length2 * 4 ;
+}

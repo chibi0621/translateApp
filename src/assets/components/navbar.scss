@@ -1,0 +1,17 @@
+@import '../all.scss';
+
+nav {
+  @extend %nav;
+}
+
+ul {
+  @extend %navUl;
+}
+  
+.link {
+  @extend %link;
+}
+  
+.link:hover {
+  @extend %linkHover;
+}

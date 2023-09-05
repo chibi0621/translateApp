@@ -1,0 +1,126 @@
+@import '~bootstrap/scss/functions';
+@import './helpers/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/bootstrap';
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  height: 700px;
+  background-color: #fff;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+%flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+%flexbox2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flexbox3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flexbox4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+%nav {
+  border-bottom: 1px solid rgba(211, 209, 209, 0.533);
+  margin-bottom: 1rem;
+}
+
+%navUl {
+  width: 100%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+%link {
+  color: #4491c5;
+}
+
+%linkHover {
+  color: #fff;
+  background-color: #000;
+  border-radius: 1rem;
+}
+
+$color1: #4491c5;
+$color2: #89c3eb;
+$color3: rgb(151, 151, 151);
+$color4: #000;
+$color5: #fff;
+$color6: rgb(230, 67, 67);
+$length1: 20%;
+$length2: .5rem;
+$length3: 2px;
+$length4: 5px;
+$length5: 10px;
+$length6: 100px;
+

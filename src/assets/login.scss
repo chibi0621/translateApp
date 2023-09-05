@@ -1,0 +1,73 @@
+@import 'all.scss';
+
+nav {
+  @extend %nav;
+}
+  
+ul {
+  @extend %navUl;
+}
+  
+.link {
+  @extend %link;
+}
+    
+.link:hover {
+  @extend %linkHover;
+}
+
+.loginBox {
+  @extend %flexbox;
+  width: $length1 * 5 ;
+}
+
+.login {
+  color: $color3;
+  margin-bottom: $length2 * 2 ;
+}
+
+.loginInput {
+  width: $length1 * 2 ;
+  margin-bottom: $length2;
+  caret-color: $color1;
+  background-color: transparent;
+  border: $color2 $length3 solid;
+}
+
+.loginBtn {
+  width: $length2 * 20 ;
+  text-align: center;
+  background-color: $color1;
+  color: $color5;
+  margin-bottom: $length2 * 4 ;
+}
+
+.loginBtn:hover {
+  width: $length2 * 20 ;
+  text-align: center;
+  border: $color1 2px solid;
+  color: $color4;
+  margin-bottom: $length2 * 4 ;
+}
+
+.list {
+  width: $length6 * 3 ;
+
+  > ul > li {
+    color: $color2;
+  }
+}
+
+.boxLink {
+  color: $color4;
+  text-decoration: none;
+}
+
+.boxLink:hover {
+  color: $color5;
+  padding: $length3 + $length4;
+  background-color: $color4;
+  border-radius: $length2 * 2 ;
+  text-decoration: none;
+  font-weight: normal;
+}
