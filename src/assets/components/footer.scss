@@ -1,0 +1,21 @@
+@import '../all.scss';
+
+.footerBox {
+  padding-top: $length2;
+  background-color: #000;
+  font-family: 'Sometype Mono', monospace, 'Libre Baskerville', serif;
+  font-weight: 700;
+}
+
+.footerLogo {
+  max-width: 10%;
+}
+
+.footerBox > p {
+  padding: 0 0 2% 0;
+  color: #fff;
+}
+
+.blue {
+  color: $color2;
+}

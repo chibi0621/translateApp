@@ -16,14 +16,21 @@
   }
 }
 
-nav {
+.navBox {
   @extend %nav;
+  min-height: 60px;
 }
-  
-ul {
+
+.navUl {
   @extend %navUl;
+  padding: 0 20%;
 }
-  
+
+.containerBox {
+  width: 100%;
+  margin: 0;
+}
+
 .link {
   @extend %link;
 }
@@ -34,7 +41,8 @@ ul {
 
 .flexBox {
   @extend %flexbox;
-  margin-bottom: $length2 * 12;
+  margin-top: 8%;
+  margin-bottom: 3%;
 }
 
 .logo {
@@ -65,7 +73,7 @@ ul {
   background-size: auto;
   border-radius: $length4;
   text-indent: $length5*3 + $length3*2 ;
-  margin-bottom: $length2*4 ;
+  margin-bottom: $length2*3 ;
 }
 
 .input::-webkit-input-placeholder {
@@ -93,12 +101,23 @@ ul {
   color: $color4;
 }
 
-.footerBox {
-  margin-bottom: 6rem;
-  border-top: 1px solid rgba(151, 151, 151, 0.365);
-  padding-top: $length2;
+.addBtn {
+  border: 0;
+  background-color: transparent;
+  opacity: 1;
+  transition: .5s;
 }
 
-.blue {
-  color: $color2;
+.addBtn:hover {
+  opacity: .5;
+  transform: scale(1.1);
 }
+
+.addBtn > svg {
+  padding: 0 3% 4% 3%;
+}
+
+.addNote {
+  font-size: 18px;
+}
+

@@ -2,6 +2,8 @@
 @import './helpers/variables';
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Sometype+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Sometype+Mono:wght@700&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -30,7 +32,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  height: 700px;
   background-color: #fff;
 }
 
@@ -91,18 +92,22 @@ h3 {
 }
 
 %nav {
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid rgba(211, 209, 209, 0.533);
   margin-bottom: 1rem;
 }
 
 %navUl {
   width: 100%;
-  margin-right: 15%;
-  margin-left: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 %link {
   color: #4491c5;
+  padding: 5% 0;
 }
 
 %linkHover {
