@@ -2,24 +2,17 @@
   <div class="containerBox">
     <NavBar></NavBar>
     <main class="flexBox">
-      <svg width="900" height="100">
+      <svg width="900" height="70">
         <text x="50%" y="50%" fill="black" class="logo">Vocabulary Learning</text>
       </svg>
       <img class="picture" src="@/assets/img/LEARNING.png" alt="...">
       <input v-model="englishWord" @keyup.enter="translate"
-      placeholder="Enter an English word" class="input"/>
+       placeholder="Enter an English word" class="input"/>
+      <button type="button" class="searchBtn" @click="translate">search</button>
       <div class="box">
         <p class="textEng">{{ englishWord }}</p>
         <p class="text">{{ chineseTranslation }}</p>
       </div>
-      <button class="addBtn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000"
-        class="bi bi-plus-lg" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0
-          0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-        </svg>
-        <span class="addNote">加到筆記</span>
-      </button>
     </main>
     <Footer></Footer>
   </div>
@@ -50,6 +43,8 @@ export default {
         console.error('Error:', error.message);
         this.chineseTranslation = '翻譯失敗';
       }
+    },
+    addToNote() {
     },
   },
   created() {

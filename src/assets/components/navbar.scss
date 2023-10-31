@@ -2,6 +2,7 @@
 
 .navBox {
   @extend %nav;
+  background-color: #fff;
   font-family: 'Sometype Mono', monospace, 'Libre Baskerville', serif;
   font-weight: 700;
   font-size: 18px;
@@ -9,18 +10,58 @@
 
 .navUl {
   @extend %navUl;
-  padding: 0 15%;
 }
 
 .navUl > li {
-  width: 15%;
+  width: 25%;
   text-align: center;
 }
   
 .link {
-  @extend %link;
+  text-decoration: none;
+  color: #4491c5;
+  padding: 1%;
+  font-size: 18px;
 }
   
 .link:hover {
-  @extend %linkHover;
+  color: #fff;
+  background-color: #000;
+  border-radius: 1rem;
+}
+
+//RWD
+@media screen and (max-width: 600px) {
+  .link {
+    padding: 4%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .link {
+    padding: 3%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .link {
+    padding: 2%;
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .link {
+    padding: 1.5%;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link {
+    padding: 1%;
+    font-size: 18px;
+  }
 }

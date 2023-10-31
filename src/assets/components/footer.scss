@@ -1,21 +1,103 @@
 @import '../all.scss';
 
 .footerBox {
-  padding-top: $length2;
+  padding: 1rem 0 .25rem 0;
   background-color: #000;
   font-family: 'Sometype Mono', monospace, 'Libre Baskerville', serif;
   font-weight: 700;
 }
 
 .footerLogo {
-  max-width: 10%;
+  max-width: 5%;
 }
 
 .footerBox > p {
-  padding: 0 0 2% 0;
   color: #fff;
+  font-size: 14px;
+  padding: 1% 0;
 }
 
 .blue {
   color: $color2;
+}
+
+//RWD
+@media screen and (max-width: 600px) {
+  .footerBox {
+    padding: 1rem 0 .5rem 0;
+    font-weight: normal;
+  }
+
+  .footerLogo {
+    max-width: 9%;
+  }
+
+  .footerBox > p {
+    font-size: 12px;
+    padding: 1% 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .footerBox {
+    padding: .75rem 0 .5rem 0;
+    font-weight: normal;
+  }
+
+  .footerLogo {
+    max-width: 8%;
+  }
+
+  .footerBox > p {
+    font-size: 13px;
+    padding: 1% 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footerBox {
+    padding: .75rem 0 .25rem 0;
+    font-weight: normal;
+  }
+
+  .footerLogo {
+    max-width: 7%;
+  }
+
+  .footerBox > p {
+    font-size: 13px;
+    padding: 1% 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footerBox {
+    padding: 1rem 0 .5rem 0;
+    font-weight: 700;
+  }
+
+  .footerLogo {
+    max-width: 6%;
+  }
+
+  .footerBox > p {
+    font-size: 14px;
+    padding: 1% 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footerBox {
+    padding: 1rem 0 .25rem 0;
+    font-weight: 700;
+  }
+
+  .footerLogo {
+    max-width: 5%;
+  }
+
+  .footerBox > p {
+    font-size: 14px;
+    padding: 1% 0;
+  }
 }

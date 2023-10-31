@@ -1,43 +1,238 @@
 @import 'all.scss';
 
-nav {
-  @extend %nav;
+.contactRow {
+  margin: 11% 0;
 }
-  
-ul {
-  @extend %navUl;
+
+.contactH2 {
+  color: $color3;
+  margin-bottom: 2rem;
 }
-  
-.link {
-  @extend %link;
-}
-    
-.link:hover {
-  @extend %linkHover;
+
+.contactBox {
+  margin-bottom: 1.5rem;
 }
 
 h3 {
-  margin-bottom: $length2;
-}
-
-.contact {
-  color: $color3;
+  margin-bottom: .5rem;
 }
 
 .questionInput {
-  caret-color: $color1;
+  width: 100%;
   background-color: transparent;
-  border: $color2 $length3 solid;
+  caret-color: $color1;
+  border: 2px solid $color2;
+  border-radius: 5px;
+  padding: 4px 7px;
 }
 
-.submit {
-  width: $length2 * 10;
-  background-color: $color5;
-  color: $color4;
-  border: $color2 solid $length3;
+.questionInput::-webkit-input-placeholder {
+  background-color: transparent;
+  color: gray;
 }
 
-.submit:hover {
-  background-color: $color4;
-  color: $color5;
+.submitBtn {
+  width: 20%;
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 5px 0;
+  margin-top: 4%;
+  transition: .5s;
+}
+
+.submitBtn:hover {
+  color: $color1;
+  background-color: transparent;
+  border: 0;
+  transform: scale(1.1);
+}
+
+//RWD
+@media screen and (max-width: 600px) {
+  .contactRow {
+    margin: 15% 0;
+  }
+
+  .contactH2 {
+    font-size: 20px;
+    margin-bottom: 1.25rem;
+  }
+
+  .contactH2 > svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .contactBox {
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin-bottom: .5rem;
+  }
+
+  .questionInput {
+    font-size: 15px;
+  }
+
+  .questionInput::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+
+  .submitBtn {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .contactRow {
+    margin: 13% 0;
+  }
+
+  .contactH2 {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+  }
+
+  .contactH2 > svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contactBox {
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin-bottom: .5rem;
+  }
+
+  .questionInput {
+    font-size: 15px;
+  }
+
+  .questionInput::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+
+  .submitBtn {
+    width: 17%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contactRow {
+    margin: 11% 0;
+  }
+
+  .contactH2 {
+    font-size: 24px;
+    margin-bottom: 1.75rem;
+  }
+
+  .contactH2 > svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .contactBox {
+    margin-bottom: 1.25rem;
+  }
+
+  h3 {
+    font-size: 17px;
+    margin-bottom: .5rem;
+  }
+
+  .questionInput {
+    font-size: 15px;
+  }
+
+  .questionInput::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+
+  .submitBtn {
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contactRow {
+    margin: 9% 0;
+  }
+  
+  .contactH2 {
+    font-size: 26px;
+    margin-bottom: 1.75rem;
+  }
+
+  .contactH2 > svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .contactBox {
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: .5rem;
+  }
+
+  .questionInput {
+    font-size: 16px;
+  }
+
+  .questionInput::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+  .submitBtn {
+    width: 13%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contactRow {
+    margin: 7% 0;
+  }
+  
+  .contactH2 {
+    font-size: 28px;
+    margin-bottom: 2rem;
+  }
+
+  .contactH2 > svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contactBox {
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: .5rem;
+  }
+
+  .questionInput {
+    font-size: 16px;
+  }
+
+  .questionInput::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+  .submitBtn {
+    width: 11%;
+  }
 }

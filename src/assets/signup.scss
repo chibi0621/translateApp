@@ -1,17 +1,17 @@
 @import 'all.scss';
   
-.loginBox {
+.signupBox {
   @extend %flexbox;
   width: 100%;
   margin-top: 4%;
 }
 
-.loginH1 {
+.signupH1 {
   color: $color3;
   margin-bottom: 3rem;
 }
 
-.loginInput {
+.signupInput {
   width: 40%;
   border: $color2 2px solid;
   border-radius: 5px;
@@ -21,7 +21,7 @@
   caret-color: $color1;
 }
 
-.loginInput::-webkit-input-placeholder {
+.signupInput::-webkit-input-placeholder {
   background-color: transparent;
   color: gray;
 }
@@ -38,7 +38,7 @@
   margin-top: .25rem;
 }
 
-.loginBtn {
+.signupBtn {
   width: 40%;
   background-color: #000;
   color: #fff;
@@ -51,7 +51,7 @@
   transition: .5s;
 }
 
-.loginBtn:hover {
+.signupBtn:hover {
   color: $color1;
   background-color: transparent;
   border: 0;
@@ -242,3 +242,4 @@
     font-size: 16px;
   }
 }
+

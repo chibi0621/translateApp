@@ -1,5 +1,5 @@
 <template>
-  <footer class="footerBox">
+  <footer class="footerBox fixed-bottom">
     <div class="text-center">
       <img class="footerLogo" src="@/assets/img/catLogo.png" alt="">
     </div>

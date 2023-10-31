@@ -4,6 +4,7 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Sometype+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Sometype+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -11,12 +12,12 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+table, caption, tbody, tfoot, thead, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
+menu, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -33,6 +34,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   background-color: #fff;
+  min-height: 700px;
 }
 
 ol, ul {
@@ -59,11 +61,15 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 h3 {
   font-size: 18px;
+}
+
+input {
+  outline: none;
 }
 
 %flexbox {
@@ -95,7 +101,7 @@ h3 {
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(211, 209, 209, 0.533);
-  margin-bottom: 1rem;
+  min-height: 40px;
 }
 
 %navUl {
@@ -103,17 +109,16 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 0 5%;
+  margin: 0;
 }
 
-%link {
-  color: #4491c5;
-  padding: 5% 0;
-}
-
-%linkHover {
-  color: #fff;
-  background-color: #000;
-  border-radius: 1rem;
+@keyframes swing {
+  15%{transform: translateY(4px);}
+  40%{transform: translateY(-4px);}
+  65%{transform: translateY(2px);}
+  85%{transform: translateY(-2px);}
+  100%{transform: translateY(0px);}
 }
 
 $color1: #4491c5;
