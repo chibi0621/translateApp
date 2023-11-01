@@ -1,16 +1,20 @@
 @import 'all.scss';
 
 .contactRow {
-  margin: 11% 0;
+  margin: 11% 0 ;
 }
 
 .contactH2 {
   color: $color3;
-  margin-bottom: 2rem;
+  margin-bottom: 2.25rem;
 }
 
 .contactBox {
   margin-bottom: 1.5rem;
+}
+
+h4 {
+  margin-bottom: .5rem;
 }
 
 h3 {
@@ -47,7 +51,8 @@ h3 {
 .submitBtn:hover {
   color: $color1;
   background-color: transparent;
-  border: 0;
+  border-bottom: 2px solid rgba(211, 209, 209, 0.533);
+  border-radius: 0;
   transform: scale(1.1);
 }
 
@@ -59,7 +64,7 @@ h3 {
 
   .contactH2 {
     font-size: 20px;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
   }
 
   .contactH2 > svg {
@@ -96,7 +101,7 @@ h3 {
 
   .contactH2 {
     font-size: 22px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
   }
 
   .contactH2 > svg {
@@ -133,7 +138,7 @@ h3 {
 
   .contactH2 {
     font-size: 24px;
-    margin-bottom: 1.75rem;
+    margin-bottom: 2rem;
   }
 
   .contactH2 > svg {
@@ -170,7 +175,7 @@ h3 {
   
   .contactH2 {
     font-size: 26px;
-    margin-bottom: 1.75rem;
+    margin-bottom: 2rem;
   }
 
   .contactH2 > svg {
@@ -207,7 +212,7 @@ h3 {
   
   .contactH2 {
     font-size: 28px;
-    margin-bottom: 2rem;
+    margin-bottom: 2.25rem;
   }
 
   .contactH2 > svg {

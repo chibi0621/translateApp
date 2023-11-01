@@ -28,22 +28,22 @@
           Log in
         </button>
       </div>
-      <div class="list">
+      <div class="loginList">
         <ul class="d-flex justify-content-between m-0 p-0">
           <li>
-            <a class="boxLink" href="">忘記帳號</a>
+            <a class="loginBoxLink" href="">忘記帳號</a>
           </li>
           <li>
             ｜
           </li>
           <li>
-            <a class="boxLink" href="">忘記密碼</a>
+            <a class="loginBoxLink" href="">忘記密碼</a>
           </li>
           <li>
             ｜
           </li>
           <li>
-            <a class="boxLink" href="">其他問題</a>
+            <a class="loginBoxLink" href="">其他問題</a>
           </li>
         </ul>
       </div>

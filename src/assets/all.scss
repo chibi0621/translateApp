@@ -34,7 +34,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   background-color: #fff;
-  min-height: 700px;
+  min-height: 900px;
 }
 
 ol, ul {
@@ -66,6 +66,11 @@ h2 {
 
 h3 {
   font-size: 18px;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: normal;
 }
 
 input {

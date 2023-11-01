@@ -1,9 +1,10 @@
 <template>
+
   <div class="container-fluid">
     <NavBar></NavBar>
     <form class="signupBox">
       <div class="signupBox">
-        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#89c3eb"
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#000"
           class="bi bi-person mb-1" viewBox="0 0 16 16">
             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4
             8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1
@@ -31,22 +32,22 @@
           Sign up
         </button>
       </div>
-      <div class="list">
+      <div class="signupList">
         <ul class="d-flex justify-content-between m-0 p-0">
           <li>
-            <a class="boxLink" href="/">回首頁</a>
+            <a class="signupBoxLink" href="/">回首頁</a>
           </li>
           <li>
             ｜
           </li>
           <li>
-            <a class="boxLink" href="/login">我要登入</a>
+            <a class="signupBoxLink" href="/login">已有帳號，要登入</a>
           </li>
           <li>
             ｜
           </li>
           <li>
-            <a class="boxLink" href="/question">問題回報</a>
+            <a class="signupBoxLink" href="/question">問題回報</a>
           </li>
         </ul>
       </div>

@@ -8,6 +8,7 @@
 
 .loginH1 {
   color: $color3;
+  letter-spacing: 1px;
   margin-bottom: 3rem;
 }
 
@@ -58,27 +59,27 @@
   transform: scale(1.1);
 }
 
-.list {
+.loginList {
   width: 300px;
 }
 
-.list > ul > li {
-  color: $color1;
+.loginList > ul > li {
+  color: #000;
 }
 
-.boxLink {
-  color: #000;
+.loginBoxLink {
+  color: $color2;
   background-color: transparent;
+  border-bottom: 2px solid rgba(211, 209, 209, 0.533);
   text-decoration: none;
-  opacity: 1;
   transition: .5s;
 }
 
-.boxLink:hover {
-  color: $color2;
+.loginBoxLink:hover {
+  color: #000;
   font-weight: normal;
   letter-spacing: 1px;
-  opacity: .7;
+  border: 0;
   transform: scale(1.1);
 }
 
@@ -110,7 +111,7 @@
     width: 15%;
   }
 
-  .boxLink {
+  .loginBoxLink {
     font-size: 15px;
   }
 }
@@ -142,7 +143,7 @@
     width: 14%;
   }
 
-  .boxLink {
+  .loginBoxLink {
     font-size: 15px;
   }
 }
@@ -174,7 +175,7 @@
     width: 13%;
   }
 
-  .boxLink {
+  .loginBoxLink {
     font-size: 16px;
   }
 }
@@ -206,7 +207,7 @@
     width: 45%;
   }
 
-  .boxLink {
+  .loginBoxLink {
     font-size: 16px;
   }
 }
@@ -238,7 +239,7 @@
     width: 40%;
   }
 
-  .boxLink {
+  .loginBoxLink {
     font-size: 16px;
   }
 }

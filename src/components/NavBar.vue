@@ -11,7 +11,7 @@
         <a class="link" href="#/login">Log In</a>
       </li>
       <li class="nav-item">
-        <a class="link" href="#/question">Question</a>
+        <a class="link" href="#/report">Report</a>
       </li>
     </ul>
   </nav>

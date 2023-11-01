@@ -11,8 +11,11 @@
             .105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h1
             2a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
           </svg>
-          聯絡我們
+          回報問題
         </h2>
+        <div class="contactBox">
+          <h4>* 請留下正確的聯絡資料並回報問題，我們將會盡快與您聯絡。</h4>
+        </div>
         <div class="contactBox">
           <h3>電郵信箱</h3>
           <input type="email" class="questionInput" id="inputEmail"
@@ -55,7 +58,7 @@
 <script>
 import NavBar from '@/components/NavBar.vue';
 import Footer from '@/components/FooTer.vue';
-import '@/assets/question.scss';
+import '@/assets/report.scss';
 
 export default {
   components: {

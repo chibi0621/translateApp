@@ -8,12 +8,13 @@
 
 .signupH1 {
   color: $color3;
+  letter-spacing: 1px;
   margin-bottom: 3rem;
 }
 
 .signupInput {
   width: 40%;
-  border: $color2 2px solid;
+  border: 2px solid #000;
   border-radius: 5px;
   background-color: transparent;
   padding: 4px 7px;
@@ -39,34 +40,36 @@
 }
 
 .signupBtn {
-  width: 40%;
-  background-color: #000;
-  color: #fff;
+  width: 15%;
+  background-color: #fff;
+  color: $color1;
   border: 0;
-  border-radius: 5px;
   text-align: center;
   letter-spacing: 2px;
+  border-bottom: 2px solid rgba(211, 209, 209, 0.533);
   padding: 8px 0;
   margin-bottom: 2rem;
   transition: .5s;
 }
 
 .signupBtn:hover {
-  color: $color1;
-  background-color: transparent;
+  width: 40%;
+  color: #fff;
+  background-color: #000;
   border: 0;
+  border-radius: 5px;
   transform: scale(1.1);
 }
 
-.list {
+.signupList {
   width: 300px;
 }
 
-.list > ul > li {
+.signupList > ul > li {
   color: $color1;
 }
 
-.boxLink {
+.signupBoxLink {
   color: #000;
   background-color: transparent;
   text-decoration: none;
@@ -74,31 +77,32 @@
   transition: .5s;
 }
 
-.boxLink:hover {
+.signupBoxLink:hover {
   color: $color2;
   font-weight: normal;
   letter-spacing: 1px;
+  border-bottom: 2px solid rgba(211, 209, 209, 0.533);
   opacity: .7;
   transform: scale(1.1);
 }
 
 //RWD
 @media screen and (max-width: 600px) {
-  .loginBox {
+  .signupBox {
     margin-top: 8%;
   }
 
-  .loginBox > svg {
+  .signupBox > svg {
     width: 50px;
     height: 50px;
   }
 
-  .loginH1 {
+  .signupH1 {
     font-size: 26px;
     margin-bottom: 2rem;
   }
 
-  .loginInput {
+  .signupInput {
     width: 60%;
   }
 
@@ -106,31 +110,35 @@
     font-size: 15px;
   }
 
-  .loginBtn {
-    width: 15%;
+  .signupBtn {
+    width: 16%;
   }
 
-  .boxLink {
+  .signupBtn:hover {
+    width: 55%;
+  }
+
+  .signupBoxLink {
     font-size: 15px;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .loginBox {
+  .signupBox {
     margin-top: 7%;
   }
 
-  .loginBox > svg {
+  .signupBox > svg {
     width: 50px;
     height: 50px;
   }
 
-  .loginH1 {
+  .signupH1 {
     font-size: 26px;
     margin-bottom: 2.25rem;
   }
 
-  .loginInput {
+  .signupInput {
     width: 55%;
   }
 
@@ -138,31 +146,35 @@
     font-size: 15px;
   }
 
-  .loginBtn {
+  .signupBtn {
     width: 14%;
   }
 
-  .boxLink {
+  .signupBtn:hover {
+    width:50%;
+  }
+
+  .signupBoxLink {
     font-size: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .loginBox {
+  .signupBox {
     margin-top: 6%;
   }
 
-  .loginBox > svg {
+  .signupBox > svg {
     width: 54px;
     height: 54px;
   }
 
-  .loginH1 {
+  .signupH1 {
     font-size: 28px;
     margin-bottom: 2.5rem;
   }
 
-  .loginInput {
+  .signupInput {
     width: 50%;
   }
 
@@ -170,31 +182,35 @@
     font-size: 16px;
   }
 
-  .loginBtn {
-    width: 13%;
+  .signupBtn {
+    width: 11%;
   }
 
-  .boxLink {
+  .signupBtn:hover {
+    width: 45%;
+  }
+
+  .signupBoxLink {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .loginBox {
+  .signupBox {
     margin-top: 5%;
   }
 
-  .loginBox > svg {
+  .signupBox > svg {
     width: 57px;
     height: 57px;
   }
 
-  .loginH1 {
+  .signupH1 {
     font-size: 30px;
     margin-bottom: 2.75rem;
   }
 
-  .loginInput {
+  .signupInput {
     width: 45%;
   }
 
@@ -202,31 +218,35 @@
     font-size: 16px;
   }
 
-  .loginBtn {
-    width: 45%;
+  .signupBtn {
+    width: 9%;
   }
 
-  .boxLink {
+  .signupBtn:hover {
+    width: 41%;
+  }
+
+  .signupBoxLink {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .loginBox {
+  .signupBox {
     margin-top: 4%;
   }
 
-  .loginBox > svg {
+  .signupBox > svg {
     width: 60px;
     height: 60px;
   }
 
-  .loginH1 {
+  .signupH1 {
     font-size: 32px;
     margin-bottom: 3rem;
   }
 
-  .loginInput {
+  .signupInput {
     width: 40%;
   }
 
@@ -234,11 +254,15 @@
     font-size: 16px;
   }
 
-  .loginBtn {
-    width: 40%;
+  .signupBtn {
+    width: 8%;
   }
 
-  .boxLink {
+  .signupBtn:hover {
+    width: 36.5%;
+  }
+
+  .signupBoxLink {
     font-size: 16px;
   }
 }
