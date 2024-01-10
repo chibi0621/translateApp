@@ -37,7 +37,7 @@ export default {
   methods: {
     async translate() {
       try {
-        const response = await axios.get(`http://localhost:9000/api/translate/${this.englishWord}`);
+        const response = await axios.post(`http://localhost:9000/api/translate/${this.englishWord}`);
         this.chineseTranslation = response.data.translation;
       } catch (error) {
         console.error('Error:', error.message);

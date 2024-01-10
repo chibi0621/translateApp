@@ -1,5 +1,5 @@
 const express = require('express');
-const dotenv = require('dotenv').config();
+require('dotenv').config();
 const axios = require('axios');
 
 const app = express();
@@ -12,16 +12,22 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/api/translate/:word', async (req, res) => {
+app.post('/api/translate/:word', async (req, res) => {
   const apiKey =  process.env.apiKey;
   const word = req.params.word;
 
   try {
     const response = await axios.post(
-      'https://api.openai.com/v1/engines/davinci-text-002/completions',
+      'https://api.openai.com/v1/chat/completions',
       {
-        prompt: `Translate the English word "${word}" to Traditional Chinese.`,
-        max_tokens: 50
+        model: "gpt-3.5-turbo",
+        messages: [
+          { role: 'system', content: 'You are a helpful assistant.' },
+          { role: 'user', content: `將英文單字 "${word}" 翻譯成繁體中文不要羅馬拼音` },
+        ],
+        max_tokens: 50,
+        n: 1,
+        stop: null
       },
       {
         headers: {
@@ -30,9 +36,14 @@ app.get('/api/translate/:word', async (req, res) => {
         }
       }
     );
-
-    const translation = response.data.choices[0].text.trim();
-    res.json({ translation });
+    const translation = response.data.choices?.[0]?.message?.['content']?.trim();
+    console.log(translation);
+    if (translation) {
+      res.json({ translation });
+    } else {
+      console.error('Invalid API response format:', response.data);
+      res.status(500).json({ error: 'An error occurred' });
+    }
   } catch (error) {
     console.error('Error:', error.message);
     res.status(500).json({ error: 'An error occurred' });
