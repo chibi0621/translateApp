@@ -18,7 +18,7 @@ app.get('/api/translate/:word', async (req, res) => {
 
   try {
     const response = await axios.post(
-      'https://api.openai.com/v1/engines/text-davinci-003/completions',
+      'https://api.openai.com/v1/chat/completions',
       {
         prompt: `Translate the English word "${word}" to Traditional Chinese.`,
         max_tokens: 50
